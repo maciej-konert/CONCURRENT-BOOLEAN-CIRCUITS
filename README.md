@@ -1,1 +1,2 @@
 # CONCURRENTBOOLEANCIRCUITS
+We were given a task to calculate boolean expressions that are represented in a tree. ALl of this has to be done concurrently. Files programmed by me are in the src/cp2024/solution. My solution uses cachedThreadPools that takes in tasks that calculate the value of every tree node by creating tasks for every of its children. These children then push the calculated values to the blocking queue of their father so that the father can calculate it's output.
